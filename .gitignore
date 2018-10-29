@@ -1,0 +1,6 @@
+*.log
+/node_modules/*
+.sass-cashe/
+*.css.map
+*.sass.map
+*.scss.map
