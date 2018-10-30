@@ -59,7 +59,7 @@
       <h1>
         <span class="primary">Web Developer</span> 
       </h1>
-      <p class="underline">Hi, I'm
+      <p>Hi, I'm
         <a href="#">DeShaun</a>! and I’m a versatile Web Developer with 5+ years of experience designing, developing, and managing complex websites. 
       </p>
     </div>
@@ -67,7 +67,7 @@
 </section>
 
 <!-- Technical Skills Section-->
-<section id="skills">
+<section id="skills" class="mb-4">
       
           <div class="small-container">
             <header class="section-header">
@@ -135,12 +135,12 @@
 </section>
 <!-- End Technical Skills Section-->
 
-<!-- Section Two-->
+<!-- Resume Section-->
 <section id="experience">
   <div class="small-container">
       <header class="section-header">
             <h2>Experience </h2>
-            <p>Some of the position's I held.</p>
+            <p>Some of the position's I held. Here is my full <a href="#" target="_blank">Resume.</a></p>
         </header>
   </div>
 
@@ -151,26 +151,133 @@
         <div class="dates">August 2016 - Present</div>
       </div>
       <div class="col-sm-8 job-descrip">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h5>Web Developer</h5>
+        <p>Currently improving the web presence for the Folsom Library department at Rensselaer. Responsibilities include re developing the Folsom Library websites, maintenance and communication.</p>
           <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Collaborate with other team members and stakeholders.</li>
+            <li>Create quality mockups and prototypes on tight timelines.</li>
+            <li>Maintain branding throughout the product’s interface.</li>
+            <li>Develop functional and appealing web applications based on usability.</li>
+            <li>Provide website maintenance and enhancements.</li>
+          </ul>
+      </div>
+      </div>
+      <hr>
+      <div class="row">
+      <div class="col-sm-4 job-title">
+        <h5>Graham Windham</h5>
+        <div class="dates">Freelancer</div>
+      </div>
+      <div class="col-sm-8 job-descrip">
+          <h5>WordPress Developer</h5>
+        <p>As a WordPress Developer for Graham Windham I was tasked with creating a custom page template for the organization current WordPress theme website.</p>
+          <ul>
+            <li>Tools used for this job was HTML5, CSS, JS and PHP.</li>
+            <li>Collaborate with other team members and stakeholders.</li>
+            <li>Designing and implementing custom page templates.</li>
+            <li>Formulate an effective, responsive design and turning it into a working theme.</li>
           </ul>
       </div>
     </div>
   </div>
 
 </section>
-<!-- End Section Two-->
+<!-- End Resume Section-->
+
+<!-- Portolio Section-->
+<section id="portfolio" class="mb-4">
+    <div class="small-container">
+        <header class="section-header">
+            <h2>Portfolio</h2>
+            <p>Here are some examples of my work. View my full <a href="#" target="_blank">Portfolio!</a></p> 
+        </header>
+      </div><!-- End of Small Container-->
+
+      <div class="container">
+        <div class="row">
+              <div class="col-sm-4">
+                  <a href="#homeportfolio1" data-toggle="modal">
+                  <img src="img/Portfolio-Front-End.png" class="img-fluid rounded" alt="Github API Portfolio">
+                  <h6>Front-End Web Development</h6>
+                </a>
+              </div>
+          
+          <div class="col-sm-4">
+              <a href="#homeportfolio2" data-toggle="modal">
+              <img src="img/github-api.png" class="img-fluid rounded" alt="Github API Portfolio">
+              <h6>Javascript Application</h6>
+            </a>
+          </div>
+          <div class="col-sm-4">
+              <a href="#homeportfolio3" data-toggle="modal">
+              <img src="img/Laravel-Port-IMG.png" class="img-fluid rounded" alt="Github API Portfolio">
+              <h6>Laravel CRUD APP</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+</section>
+<!-- End Portolio Section-->
 
 <!-- Footer Area-->
   <footer class="footer text-center">
       <div class="container">
-        Made by DeShaun Jones.
+        Developed by DeShaun Jones.
       </div>
     </footer>
+
+    <!-- Portfolio Modal 1 -->
+<div class="portfolio-modal modal fade" id="homeportfolio1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Front End Web Development</h5>
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-7">
+                  <img class="img-fluid" src="img/Portfolio-Front-End.png" alt="Front End Development Portfolio Image">
+              </div>
+              <div class="col-sm-5">
+                 <p><strong>Description: </strong> This project is a static HTML website showcasing my online portfolio. This application uses the Bootstrap 4 framework, scss styling and javascript asynchronous call to fetch data from the Github API.</p>
+                 <p><strong>View The: </strong><a href="https://iamdeshaun.github.io/Front-End-Development-Portfolio/" target="_blank">Live Project</a> | <a href="https://github.com/IamDeShaun/Front-End-Development-Portfolio" taget="_blank">Github Repos</a> </strong></p>
+              </div>
+            </div>
+          </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+  <div class="modal fade" id="homeportfolio2" tabindex="-1" role="dialog" aria-labelledby="homeportfolio2" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -62,6 +62,11 @@ body > .container {
 .primary {
   color: #45bafc; }
 
+hr {
+  height: 1px;
+  margin-left: 15px;
+  margin-bottom: 3px; }
+
 .section-header {
   margin-bottom: 4rem; }
 
@@ -100,6 +105,9 @@ a {
 
 a:hover {
   color: #fff; }
+
+h1, h2, h3, h4, h5, h6, h7 {
+  font-weight: 800 !important; }
 
 h1 {
   font-size: 3rem;
@@ -179,6 +187,18 @@ span.site-hero h1 {
   margin: 2.5rem 0;
   color: #bec6d5; }
 
+/*--------------------------------------------------------------
+# Skills Section Section
+--------------------------------------------------------------*/
+#skills {
+  background: -webkit-gradient(linear, left bottom, right top, from(#f6f6f7), to(#fefefe));
+  background: linear-gradient(to top right, #f6f6f7, #fefefe);
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  padding-top: 50px; }
+  #skills p {
+    text-align: center; }
+
 .card {
   padding: 2.5rem;
   background: #fff;
@@ -204,21 +224,100 @@ span.site-hero h1 {
   text-align: center; }
 
 /*--------------------------------------------------------------
-# Skills Section Section
+# Resume Section
 --------------------------------------------------------------*/
-#skills {
-  padding-top: 2rem;
-  background: #fefefe;
-  margin-bottom: 40px; }
-  #skills p {
-    text-align: center; }
+#experience ul li {
+  margin-left: 40px;
+  margin-bottom: 1rem; }
 
 /*--------------------------------------------------------------
-# Section 3
+# Portfolio Section
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Section 4
---------------------------------------------------------------*/
+#portfolio {
+  padding-top: 2rem;
+  background: -webkit-gradient(linear, left bottom, right top, from(#f6f6f7), to(#fefefe));
+  background: linear-gradient(to top right, #f6f6f7, #fefefe);
+  padding-bottom: 60px;
+  margin-bottom: 60px; }
+  #portfolio img {
+    cursor: pointer;
+    margin-bottom: 10px; }
+
+#portfolio p {
+  text-align: center; }
+
+#portfolio h6 {
+  text-align: center; }
+
+.modal-dialog {
+  max-width: 80% !important;
+  max-height: 50% !important;
+  padding: 0 !important; }
+
+.modal-header {
+  padding: 2rem !important; }
+
+.modal-body .p {
+  text-align: left; }
+
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 90% !important;
+  padding: 0; }
+
+.portfolio-modal .modal-content h2 {
+  margin: 0;
+  font-size: 3em; }
+
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px; }
+
+.portfolio-modal .modal-content .item-details {
+  margin: 30px 0; }
+
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer; }
+
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3; }
+
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #000120;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051; }
+
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #000120;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052; }
+
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none; }
+
 /*--------------------------------------------------------------
 # Section 5
 --------------------------------------------------------------*/
