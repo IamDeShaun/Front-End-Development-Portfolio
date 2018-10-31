@@ -104,7 +104,8 @@ a {
   text-decoration: none; }
 
 a:hover {
-  color: #fff; }
+  color: #fff;
+  text-decoration: none !important; }
 
 h1, h2, h3, h4, h5, h6, h7 {
   font-weight: 800 !important; }
@@ -177,6 +178,11 @@ header .navbar-light .navbar-toggler {
   font-weight: 800;
   color: #68c7fd; }
 
+.site-hero a:hover {
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none !important; }
+
 span.site-hero h1 {
   font-family: nunito sans,sans-serif;
   font-weight: 800 !important;
@@ -248,6 +254,21 @@ span.site-hero h1 {
 
 #portfolio h6 {
   text-align: center; }
+
+#fullportfolio {
+  padding-top: 2rem;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  margin-top: 4rem;
+  background: -webkit-gradient(linear, left bottom, right top, from(#f6f6f7), to(#fefefe));
+  background: linear-gradient(to top right, #f6f6f7, #fefefe);
+  text-align: center; }
+
+#fullportfolio img {
+  margin-bottom: 25px; }
+
+.makeroom {
+  margin-bottom: 25px; }
 
 .modal-dialog {
   max-width: 80% !important;

@@ -26,6 +26,7 @@ Description: This is a responsive website built using the bootstrap 4 framework.
 # Variables
 --------------------------------------------------------------*/
 $navbg: #1d1e25;
+$spacer: 25px;
 
 
 
@@ -130,6 +131,7 @@ a {
 
  a:hover{
   color: #fff;
+  text-decoration: none !important;
  } 
 
  h1,h2,h3,h4,h5,h6,h7 {
@@ -234,6 +236,12 @@ header {
     font-weight: 800;
     color: #68c7fd;
   }
+
+  .site-hero a:hover {
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none !important;
+  }
   
   span.site-hero h1 {
     font-family: nunito sans,sans-serif;
@@ -327,6 +335,24 @@ text-align: center;
 #portfolio h6{
   text-align: center;
 } 
+
+#fullportfolio {
+  padding-top: 2rem;
+  padding-bottom: 60px;
+  margin-bottom: 60px; 
+  margin-top: 4rem;
+  background: -webkit-gradient(linear,left bottom,right top,from(#f6f6f7),to(#fefefe));
+  background: linear-gradient(to top right,#f6f6f7,#fefefe);
+  text-align: center;
+}
+
+#fullportfolio img {
+  margin-bottom: $spacer;
+}
+
+.makeroom {
+  margin-bottom: $spacer;
+}
 
 .modal-dialog {
   max-width: 80% !important;
@@ -422,8 +448,6 @@ text-align: center;
   margin-bottom: 60px; 
   text-align: center;
  }
-
-
 
 
 
