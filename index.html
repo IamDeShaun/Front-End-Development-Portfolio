@@ -28,6 +28,7 @@
   <!-- Top Navigation Area-->
   <header>
       <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+        <div class="container">
             <span class="brandnew"><a class="navbar-brand" href="index.html">DeShaun <strong>Jones</strong></a></span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fa fa-bars fa-lg" aria-hidden="true" title="Toggle navigation"></i>
@@ -49,6 +50,8 @@
                   </li>
             </div>
         </div>
+        </div>   
+        </nav>
   </header>
   <!-- End Top Navigation Area-->
 
@@ -219,6 +222,32 @@
 </section>
 <!-- End Portolio Section-->
 
+<!-- Contact Section-->
+<section id="contact">
+    <div class="small-container">
+        <header class="section-header">
+              <h2>Stay In Touch</h2>
+          </header>
+    </div><!-- End of Small Container-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+            <a href="mailto:ceo@deshaunjones.com" target="_blank"><i class="fas fa-envelope-square fa-5x"></i><br><h5>ceo@deshaunjones.com</h5></a>
+        </div>
+        <div class="col-sm-4">
+            <a href="https://github.com/IamDeShaun" target="_blank"><i class="fab fa-github-square fa-5x"></i><br><h5>Github.com/iamdeshaun</h5></a>
+        </div>
+        <div class="col-sm-4">
+            <a href="https://www.linkedin.com/in/mrdjones/" target="_blank"><i class="fab fa-linkedin fa-5x"></i><br><h5>linkedin.com/in/mrdjones</h5></a>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+<!-- End Contact Section-->
+
 <!-- Footer Area-->
   <footer class="footer text-center">
       <div class="container">
@@ -226,7 +255,7 @@
       </div>
     </footer>
 
-    <!-- Portfolio Modal 1 -->
+<!-- Portfolio Modal 1 -->
 <div class="portfolio-modal modal fade" id="homeportfolio1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -246,7 +275,7 @@
                   <img class="img-fluid" src="img/Portfolio-Front-End.png" alt="Front End Development Portfolio Image">
               </div>
               <div class="col-sm-5">
-                 <p><strong>Description: </strong> This project is a static HTML website showcasing my online portfolio. This application uses the Bootstrap 4 framework, scss styling and javascript asynchronous call to fetch data from the Github API.</p>
+                 <p><strong>Description: </strong> This project is a static HTML website showcasing my online portfolio. This application uses the Bootstrap 4 framework, scss styling and javascript.</p>
                  <p><strong>View The: </strong><a href="https://iamdeshaun.github.io/Front-End-Development-Portfolio/" target="_blank">Live Project</a> | <a href="https://github.com/IamDeShaun/Front-End-Development-Portfolio" taget="_blank">Github Repos</a> </strong></p>
               </div>
             </div>
@@ -258,26 +287,76 @@
       </div>
     </div>
   </div> 
-</div>
-  <div class="modal fade" id="homeportfolio2" tabindex="-1" role="dialog" aria-labelledby="homeportfolio2" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+</div> <!-- End Portfolio Modal 1 -->
+
+<!-- Portfolio Modal 2 -->
+<div class="portfolio-modal modal fade" id="homeportfolio2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">JavaScript Application</h5>
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-7">
+                  <img class="img-fluid" src="img/github-api.png" alt="JavaScript Portfolio Image">
+              </div>
+              <div class="col-sm-5">
+                 <p><strong>Description: </strong> A simple one page application that uses a fetch api call to pull data from Github. This application uses the Bootstrap 4 framework, scss styling and javascript.</p>
+                 <p><strong>View The: </strong><a href="https://iamdeshaun.github.io/github-api/" target="_blank">Live Project</a> | <a href="https://github.com/IamDeShaun/github-api" taget="_blank">Github Repos</a> </strong></p>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-           
-          </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div> 
+</div> <!-- End Portfolio Modal 2 -->
+
+<!-- Portfolio Modal 3 -->
+<div class="portfolio-modal modal fade" id="homeportfolio3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Laravel Crud Application</h5>
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-7">
+                  <img class="img-fluid" src="/img/Laravel-Port-IMG.png" alt="Laravel Portfolio Image">
+              </div>
+              <div class="col-sm-5">
+                 <p><strong>Description: </strong> This is a simple CRUD application using Laravel 5.6 and deployed using the Heroku platform. This application uses the Bootstrap 4 framework, Laravel CSS styling and MYSQL.</p>
+                 <p><strong>View The: </strong><a href="http://sleepy-tundra-68514.herokuapp.com/" target="_blank">Live Project</a> | <a href="https://github.com/IamDeShaun/laravelapp" taget="_blank">Github Repos</a> </strong></p>
+              </div>
+            </div>
+          </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div> <!-- End Portfolio Modal 3 -->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
