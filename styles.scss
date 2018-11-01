@@ -12,12 +12,12 @@ Description: This is a responsive website built using the bootstrap 4 framework.
 # Mixings
 # Base Styles
   ## Header
-	## Section 1
+	## Site Hero Section
   ## Section 2
   ## Section 3
   ## Section 4
   ## Section 5
-  ## Section 6
+  ## Footer
   ## Media Queries
 
 --------------------------------------------------------------*/
@@ -119,6 +119,24 @@ hr {
   border-radius: 3px;
   cursor: pointer;
   z-index: 999999999;
+}
+
+iframe {
+
+  border: 0;
+  font: inherit;
+      font-size: inherit;
+  font-size: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+
+}
+embed, iframe, object {
+
+  max-width: 100%;
+
 }
 
 .section {
@@ -326,6 +344,16 @@ text-align: center;
   
 }
 
+#resume {
+  
+  padding-bottom: 50px;
+  margin-top: 3.5rem;
+  background: -webkit-gradient(linear,left bottom,right top,from(#f6f6f7),to(#fefefe));
+  background: linear-gradient(to top right,#f6f6f7,#fefefe);
+ 
+  text-align: center;
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Section
@@ -486,5 +514,5 @@ text-align: center;
 
 
 /*--------------------------------------------------------------
-# Media Quiers
+# Media Queries
 --------------------------------------------------------------*/
