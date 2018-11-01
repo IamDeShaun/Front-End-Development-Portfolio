@@ -319,11 +319,45 @@
 
             <div class="row">
                 <div class="col-sm-6 makeroom">
-                    <a href="#" data-toggle="modal">
+                    <a href="#jonesway-media" data-toggle="modal">
                     <img src="img/jonesway-media-port-img.png" class="img-fluid rounded" alt="Enveonline Portfolio">
                     <h5>Jonesway Media</h5>
                   </a>
-                </div>
+                          <!-- Portfolio Modal -->
+                          <div class="portfolio-modal modal fade" id="jonesway-media" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">WordPress Theme Developer</h5>
+                                  <div class="close-modal" data-dismiss="modal">
+                                      <div class="lr">
+                                        <div class="rl">
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="container">
+                                    <div class="row">
+                                      <div class="col-sm-7">
+                                          <img class="img-fluid" src="/img/jonesway-media-port-img.png" alt="Jonesway Media Portfolio">
+                                      </div>
+                                      <div class="col-sm-5">
+                                        <p><strong>Description: </strong> Jonesway Media is a premium design agency that focuses on quality, innovation and speed. I started off creating the wire frames using UXPin, then developed the static HTML pages using a bootstrap framework. From there I used underscores, and PHP to turn the static HTML pages into a fully customized WordPress theme.  </p>
+                                        <p><strong>View The: </strong><a href="http://a-pella.com/" target="_blank">Live Project</a> | <a href="https://github.com/IamDeShaun/A-Pella-Custom-Wordpress-Themed-Website" taget="_blank">Github Repos</a> </strong></p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div> 
+                          </div> <!-- End Portfolio Modal-->
+
+                </div><!-- End Portfolio Item-->
             
             <div class="col-sm-6 makeroom">
                 <a href="#" data-toggle="modal">
@@ -398,7 +432,7 @@
   <!-- End Full Portfolio Section -->
 
 <!-- Scroll To The Top Button -->
-<button onclick="topFunction()" class="scroll-to-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+<div class="back-to-top" title="Go to top"><i class="fa fa-chevron-up"></i></div>
 <!-- End Scroll To The Top Button -->
 
 
@@ -412,11 +446,30 @@
 
 
       
-    <!-- Optional JavaScript -->
-    <script src="api.js"></script>
+  <!-- Optional JavaScript -->
+  <script src="main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="//use.typekit.net/gla7wnd.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+      var $backToTop = $(".back-to-top");
+      $backToTop.hide();
+
+      $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 100) {
+          $backToTop.fadeIn();
+        } else {
+          $backToTop.fadeOut();
+        }
+      });
+
+      $backToTop.on('click', function(e) {
+        $("html, body").animate({scrollTop: 0}, 500);
+      });
+	</script>
   </body>
 </html>

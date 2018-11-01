@@ -106,12 +106,13 @@ hr {
     margin-right: auto;
 }
 
-.scroll-to-top {
+.back-to-top {
   width: 50px;
   height: 50px;
   position: fixed;
-  right: 2%;
-  bottom:2%; 
+  right: 1%;
+  bottom:1%; 
+  padding-top: 15px;
   background: rgba(0,0,0, 0.8);
   color: white;
   text-align: center;
