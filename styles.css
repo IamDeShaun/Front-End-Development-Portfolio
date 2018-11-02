@@ -224,11 +224,11 @@ span.site-hero h1 {
 # Skills Section Section
 --------------------------------------------------------------*/
 #skills {
+  padding-top: 2rem;
   background: -webkit-gradient(linear, left bottom, right top, from(#f6f6f7), to(#fefefe));
   background: linear-gradient(to top right, #f6f6f7, #fefefe);
-  padding-bottom: 40px;
-  margin-bottom: 40px;
-  padding-top: 50px; }
+  padding-bottom: 60px;
+  margin-bottom: 60px; }
   #skills p {
     text-align: center; }
 

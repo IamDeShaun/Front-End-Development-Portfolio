@@ -34,7 +34,23 @@ $spacer: 25px;
 # Mixings
 --------------------------------------------------------------*/
 
+@mixin homegrey {
+  padding-top: 2rem;
+  background: -webkit-gradient(linear,left bottom,right top,from(#f6f6f7),to(#fefefe));
+  background: linear-gradient(to top right,#f6f6f7,#fefefe);
+  padding-bottom: 60px;
+  margin-bottom: 60px; 
+}
 
+@mixin greypagelayout{
+  padding-top: 2rem;
+  padding-bottom: 60px;
+  margin-bottom: 60px; 
+  margin-top: 4rem;
+  background: -webkit-gradient(linear,left bottom,right top,from(#f6f6f7),to(#fefefe));
+  background: linear-gradient(to top right,#f6f6f7,#fefefe);
+  text-align: center;
+}
 
 
 /*--------------------------------------------------------------
@@ -142,6 +158,7 @@ embed, iframe, object {
 .section {
   padding: 2rem 0 !important;
 }
+
 #experience {
   margin-bottom: 40px;
   padding-bottom: 50px;
@@ -208,9 +225,6 @@ p.underline a {
   background-size:100% 6px;
   text-decoration: none; 
  }
-
-
-
 
 
 /*--------------------------------------------------------------
@@ -297,11 +311,8 @@ header {
 
 #skills {
 
-  background: -webkit-gradient(linear,left bottom,right top,from(#f6f6f7),to(#fefefe));
-  background: linear-gradient(to top right,#f6f6f7,#fefefe);
-  padding-bottom: 40px;
-  margin-bottom: 40px;
-  padding-top: 50px;
+  @include homegrey();
+
   p {
     text-align: center;
   }
@@ -359,11 +370,7 @@ text-align: center;
 # Portfolio Section
 --------------------------------------------------------------*/
 #portfolio {
-  padding-top: 2rem;
-  background: -webkit-gradient(linear,left bottom,right top,from(#f6f6f7),to(#fefefe));
-  background: linear-gradient(to top right,#f6f6f7,#fefefe);
-  padding-bottom: 60px;
-  margin-bottom: 60px; 
+@include homegrey(); 
 
   img {
     cursor: pointer;
@@ -380,13 +387,7 @@ text-align: center;
 } 
 
 #fullportfolio {
-  padding-top: 2rem;
-  padding-bottom: 60px;
-  margin-bottom: 60px; 
-  margin-top: 4rem;
-  background: -webkit-gradient(linear,left bottom,right top,from(#f6f6f7),to(#fefefe));
-  background: linear-gradient(to top right,#f6f6f7,#fefefe);
-  text-align: center;
+ @include greypagelayout();
 }
 
 #fullportfolio img {
@@ -481,13 +482,7 @@ text-align: center;
 }
 
 #github-repos {
-  padding-top: 2rem;
-  padding-bottom: 60px;
-  margin-bottom: 60px; 
-  margin-top: 4rem;
-  background: -webkit-gradient(linear,left bottom,right top,from(#f6f6f7),to(#fefefe));
-  background: linear-gradient(to top right,#f6f6f7,#fefefe);
-  text-align: center;
+ @include greypagelayout();
 }
 
 
