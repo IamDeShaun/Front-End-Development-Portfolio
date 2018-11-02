@@ -25,3 +25,24 @@ $(function() {
 	});
 	
 });
+
+// Create Class and Constructor 
+class Github {
+	constructor() {
+    this.repos_count = 8;
+    this.repos_sort = 'created: asc'
+  }
+
+	async getUser(){
+
+		const repoResponse = await fetch(`https://api.github.com/users/iamdeshaun/repos?per_page=${this.repos_count}&sort=${this.repos_sort}`);
+
+		const repos = await repoResponse.json();
+		
+		return {
+      repos
+    }
+
+	}
+
+};
