@@ -27,7 +27,12 @@ Description: This is a responsive website built using the bootstrap 4 framework.
 --------------------------------------------------------------*/
 $navbg: #1d1e25;
 $spacer: 25px;
-
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);
 
 
 /*--------------------------------------------------------------
@@ -50,6 +55,27 @@ $spacer: 25px;
   background: -webkit-gradient(linear,left bottom,right top,from(#f6f6f7),to(#fefefe));
   background: linear-gradient(to top right,#f6f6f7,#fefefe);
   text-align: center;
+}
+
+@mixin respond-below($breakpoint) {
+
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    // Write the media query.
+    @media (max-width: ($breakpoint-value - 1)) {
+      @content;
+    }
+
+  // If the breakpoint doesn't exist in the map.
+  } @else {
+
+    // Log a warning.
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
 }
 
 
@@ -526,11 +552,10 @@ text-align: center;
   }
 
 
-
-
-
-
-
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
+
+@include respond-below(xs) { 
+
+}
