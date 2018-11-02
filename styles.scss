@@ -440,6 +440,10 @@ text-align: center;
   text-align: left !important;
 }
 
+#fullportfolio .modal-body p{
+  text-align: left !important;
+}
+
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
@@ -466,8 +470,8 @@ text-align: center;
 
 .portfolio-modal .close-modal {
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   background-color: transparent;
   top: 25px;
   right: 25px;
@@ -479,7 +483,7 @@ text-align: center;
 }
 
 .portfolio-modal .close-modal .lr {
-  height: 75px;
+  height: 50px;
   width: 1px;
   margin-left: 35px;
   background-color: #000120;
@@ -492,7 +496,7 @@ text-align: center;
 }
 
 .portfolio-modal .close-modal .lr .rl {
-  height: 75px;
+  height: 50px;
   width: 1px;
   background-color: #000120;
   transform: rotate(90deg);
@@ -566,6 +570,7 @@ text-align: center;
   .modal-dialog {
     max-width: 95% !important;
   }
+
   .portfolio-modal .close-modal {
     position: absolute;
     width: 30px;
@@ -581,6 +586,25 @@ text-align: center;
   }
 
   .portfolio-modal .close-modal .rl {
+    height: 40px !important;
+    width: 1px;
+  }
+
+  #fullportfolio .portfolio-modal .close-modal {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+#fullportfolio .portfolio-modal .close-modal .lr {
+    height: 40px !important;
+    width: 1px;
+  }
+
+  #fullportfolio .portfolio-modal .close-modal .rl {
     height: 40px !important;
     width: 1px;
   }
