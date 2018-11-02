@@ -1,15 +1,14 @@
 // Create Class and Constructor 
 class Github {
 	constructor() {
-		this.client_id = 'bc79a71d92029fa69223';
-    this.client_secret = '4e63f1f5495f78dbf39607c22fd1eb9b965866ff';
+		
     this.repos_count = 8;
     this.repos_sort = 'created: asc'
   }
 
 	async getUser(){
 
-		const repoResponse = await fetch(`https://api.github.com/users/iamdeshaun/repos?per_page=${this.repos_count}&sort=${this.repos_sort}&client_id=${this.client_id}&client_secret=${this.client_secret}`);
+		const repoResponse = await fetch(`https://api.github.com/users/iamdeshaun/repos?per_page=${this.repos_count}&sort=${this.repos_sort}`);
 
 		const repos = await repoResponse.json();
 		
