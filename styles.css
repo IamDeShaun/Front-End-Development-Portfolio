@@ -120,7 +120,7 @@ embed, iframe, object {
 
 .section-header {
   text-align: center;
-  margin-bottom: 4rem; }
+  margin-bottom: 3rem; }
 
 .section-header p {
   color: #858787; }
@@ -312,8 +312,8 @@ span.site-hero h1 {
 .modal-header {
   padding: 2rem !important; }
 
-.modal-body .p {
-  text-align: left; }
+#portfolio .modal-body p {
+  text-align: left !important; }
 
 .portfolio-modal .modal-content {
   border-radius: 0;
@@ -412,5 +412,32 @@ span.site-hero h1 {
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
+@media (max-width: 575px) {
+  #portfolio h6 {
+    padding-top: 10px !important;
+    padding-bottom: 20px !important; }
+
+  .modal-dialog {
+    max-width: 95% !important; }
+
+  .portfolio-modal .close-modal {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+    cursor: pointer; }
+
+  .portfolio-modal .close-modal .lr {
+    height: 40px !important;
+    width: 1px; }
+
+  .portfolio-modal .close-modal .rl {
+    height: 40px !important;
+    width: 1px; }
+
+  #contact h6 {
+    margin-bottom: 30px !important; } }
 
 /*# sourceMappingURL=styles.css.map */
