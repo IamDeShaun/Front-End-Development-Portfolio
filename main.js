@@ -1,48 +1,65 @@
-$(function() {
-	
-	// Cache the Window object
-	var $window = $(window);
-	
-	// Parallax Backgrounds
-	// Tutorial: http://code.tutsplus.com/tutorials/a-simple-parallax-scrolling-technique--net-27641
-	
-	$('section[data-type="background"]').each(function(){
-		var $bgobj = $(this); // assigning the object
-		
-		$(window).scroll(function() {
-		
-			// Scroll the background at var speed
-			// the yPos is a negative value because we're scrolling it UP!								
-			var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-			
-			// Put together our final background position
-			var coords = '50% '+ yPos + 'px';
-			
-			// Move the background
-			$bgobj.css({ backgroundPosition: coords });
-			
-		}); // end window scroll
-	});
-	
-});
-
 // Create Class and Constructor 
 class Github {
 	constructor() {
+		this.client_id = 'bc79a71d92029fa69223';
+    this.client_secret = '4e63f1f5495f78dbf39607c22fd1eb9b965866ff';
     this.repos_count = 8;
     this.repos_sort = 'created: asc'
   }
 
 	async getUser(){
 
-		const repoResponse = await fetch(`https://api.github.com/users/iamdeshaun/repos?per_page=${this.repos_count}&sort=${this.repos_sort}`);
+		const repoResponse = await fetch(`https://api.github.com/users/iamdeshaun/repos?per_page=${this.repos_count}&sort=${this.repos_sort}&client_id=${this.client_id}&client_secret=${this.client_secret}`);
 
 		const repos = await repoResponse.json();
 		
 		return {
       repos
     }
-
 	}
 
 };
+
+// Create Class and Constructor 
+class UI {
+
+	// Show user repos
+	showRepos(repos) {
+		let output = '';
+
+		repos.forEach(function(repo) {
+			output += `
+			<div class="card card-body mb-2">
+			<div class="row">
+				<div class="col-md-3">
+					<a href="${repo.html_url}" target="_blank"><strong>${repo.name}</strong></a>
+				</div>
+				<div class="col-md-9">
+				<span>${repo.description}</span><br><br>
+				<span class="badge badge-primary">Stars: ${repo.stargazers_count}</span>
+				<span class="badge badge-secondary">Watchers: ${repo.watchers_count}</span>
+				<span class="badge badge-success">Forks: ${repo.forms_count}</span>
+				</div>
+			</div>
+		</div>
+	`;
+		});
+
+		// Output repos
+		document.getElementById('latestrepos').innerHTML = output;	
+	}
+
+};
+
+// Init Github
+const git = new Github;
+
+// Init UI
+const ui = new UI;
+
+// Make http call
+git.getUser() 
+.then(data => {
+  console.log(data);
+  ui.showRepos(data.repos);
+});

@@ -373,6 +373,15 @@ span.site-hero h1 {
   opacity: 0;
   display: none; }
 
+#github-repos {
+  padding-top: 2rem;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  margin-top: 4rem;
+  background: -webkit-gradient(linear, left bottom, right top, from(#f6f6f7), to(#fefefe));
+  background: linear-gradient(to top right, #f6f6f7, #fefefe);
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
