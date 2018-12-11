@@ -425,29 +425,6 @@ span.site-hero h1 {
   background: -webkit-gradient(linear, left bottom, right top, from(#f6f6f7), to(#fefefe));
   background: linear-gradient(to top right, #f6f6f7, #fefefe);
   text-align: center; }
-
-  #blog .section-header {
-    margin-bottom: 0px !important;
-  }
-
-  #blog header h2 {
-    padding-bottom: 10px;
-    font-size: 1.75rem !important;
-}
-
-#blog .card {
-  padding: 1rem;
-  margin: 10px;
-  margin-bottom: 10px;
-}
-
-#blog .post-thumb img {
-  max-height: 180px;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-
   #blog .u-mb3 {
     margin-bottom: 30px !important; }
   #blog h4 a {
@@ -456,19 +433,39 @@ span.site-hero h1 {
     color: #007bff !important; }
   #blog .u-pb2 {
     padding-bottom: 20px !important; }
+  #blog .card {
+    padding: 0rem !important;
+    margin-bottom: 20px !important; }
+  #blog .card .card-img-top {
+    max-height: 300px; }
+  #blog .card .card-img-top img {
+    max-width: 100%; }
+  #blog .card a {
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+  #blog .card .card-body {
+    text-align: left; }
   #blog .card h4 {
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-align: left; }
   #blog .card p {
-    color: #667 !important; }
- 
+    color: #667 !important;
+    margin-bottom: 0px !important; }
+  #blog .card .card-body a {
+    color: #007bff !important; }
+  #blog .post-thumb {
+    height: 120px;
+    overflow: hidden;
+    max-width: 270px; }
   #blog .meta {
-    font-size: 12px; }
-  #blog .meta {
+    font-size: 12px;
     line-height: .8em;
     color: #7b8a96;
-    text-align: left; }
+    text-align: left;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 1rem; }
   #blog .meta > span {
     display: inline-block;
     padding-top: 2px; }
@@ -501,12 +498,10 @@ span.site-hero h1 {
     text-align: left; }
   #blog-post .card p {
     color: #667 !important; }
-
   #blog-post .post-thumb {
-    height: 180px;
+    height: 120px;
     overflow: hidden;
     max-width: 270px; }
-
   #blog-post .meta {
     font-size: 12px; }
   #blog-post .meta {
@@ -529,13 +524,6 @@ span.site-hero h1 {
     overflow: hidden;
     text-align: center;
     margin-bottom: 30px; }
-
-    #blog-post .post-banner img {
-      height: auto;
-      max-width: 100%;
-      max-height: 240px;
-      overflow: hidden;
-  }
 
 /*--------------------------------------------------------------
 # Footer Section
@@ -608,15 +596,6 @@ span.site-hero h1 {
     width: 1px; }
 
   #contact h6 {
-    margin-bottom: 30px !important; } 
-  
-    #blog .post-thumb {
-      margin-bottom:20px;
-      
-    }
-    #blog p {
-      text-align: left !important;
-    }
-  }
+    margin-bottom: 30px !important; } }
 
 /*# sourceMappingURL=styles.css.map */

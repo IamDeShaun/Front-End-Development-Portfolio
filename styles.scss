@@ -574,6 +574,29 @@ text-align: center;
   .u-pb2 {
     padding-bottom: 20px !important;
   }
+
+  .card {
+  padding: 0rem !important;
+  margin-bottom: 20px !important;
+  }
+
+  .card .card-img-top {
+    max-height: 300px;
+  }
+
+  .card .card-img-top img {
+    max-width: 100%;
+  }
+
+  .card a {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+  }
+
+  .card .card-body {
+    text-align: left;
+  }
+
   .card h4 {
     font-weight: 400;
     font-size: 1.5rem;
@@ -581,19 +604,28 @@ text-align: center;
     }
    .card p {
      color: #667 !important;
+     margin-bottom: 0px !important;
    } 
+
+   .card .card-body a {
+     color: #007bff !important;
+   }
    .post-thumb {
      height: 120px;
      overflow: hidden;
      max-width: 270px;
    }
+   
    .meta {
-     font-size: 12px;
-   }
-   .meta {
+    font-size: 12px;
     line-height:.8em;
     color:#7b8a96;
     text-align: left;
+    padding-left: 1.25rem;
+
+padding-right: 1.25rem;
+
+padding-bottom: 1rem;
    }
    .meta>span {
     display:inline-block;
