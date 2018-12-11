@@ -203,7 +203,6 @@ header .navbar-light .navbar-toggler {
 --------------------------------------------------------------*/
 .site-hero {
   padding-top: 60px;
-  margin-top: 50px;
   padding-bottom: 60px;
   background: -webkit-gradient(linear, left top, right bottom, from(#292C33), to(#393d47));
   background: linear-gradient(to bottom right, #292C33, #393d47);
@@ -518,8 +517,8 @@ span.site-hero h1 {
     border-left: 1px solid #d9d9d9;
     margin-left: .75em;
     padding-left: .75em; }
-  #blog-post .post-banner img {
-    height: 300px;
+  #blog-post .post-banner {
+    height: 240px;
     width: 100%;
     overflow: hidden;
     text-align: center;
@@ -540,10 +539,31 @@ span.site-hero h1 {
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
+@media (max-width: 991px) {
+.navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 900px;
+}
+nav ul {
+  margin-top: 20px;
+  padding-bottom: 20px; }
+
+nav a {
+  text-align: center; }
+
+a.nav-link {
+  font-size: 1.5rem !important; }
+
+a.nav-link:hover {
+  font-size: 1.5rem !important; }
+  
+}
+
 @media (max-width: 575px) {
   nav ul {
-    margin-top: 50px;
-    padding-bottom: 50px; }
+    margin-top: 20px;
+    padding-bottom: 20px; }
 
   nav a {
     text-align: center; }
