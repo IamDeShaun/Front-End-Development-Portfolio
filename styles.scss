@@ -49,10 +49,9 @@ $breakpoints: (
 }
 
 @mixin greypagelayout{
-  padding-top: 2rem;
   padding-bottom: 60px;
   margin-bottom: 60px; 
-  margin-top: 4rem;
+  margin-top: 2rem;
   background: -webkit-gradient(linear,left bottom,right top,from(#f6f6f7),to(#fefefe));
   background: linear-gradient(to top right,#f6f6f7,#fefefe);
   text-align: center;
@@ -701,8 +700,8 @@ padding-bottom: 1rem;
     padding-left:.75em;
    }
 
-   .post-banner {
-    height: 240px;
+   .post-banner img {
+    height: 300px;
     width: 100%;
      overflow: hidden;
      text-align: center;
