@@ -49,7 +49,8 @@ $breakpoints: (
 }
 
 @mixin greypagelayout{
-  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 30px;
   margin-bottom: 60px; 
   margin-top: 2rem;
   background: -webkit-gradient(linear,left bottom,right top,from(#f6f6f7),to(#fefefe));
