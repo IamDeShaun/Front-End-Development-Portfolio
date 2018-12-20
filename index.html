@@ -29,9 +29,16 @@
   <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <span class="brandnew"><a class="navbar-brand" href="index.html">DeShaun <strong>Jones</strong></a></span>
+            <span class="brandnew">
+                <i class="fas fa-code"></i>
+              <a class="navbar-brand" href="index.html">DeShaun <strong>Jones</strong></a>
+            </span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="fa fa-bars fa-lg" aria-hidden="true" title="Toggle navigation"></i>
+                <div class="animated-icon1">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
               <span class="sr-only">Toggle navigation</span>
             </button>
             <div class="collapse navbar-collapse" id="navbarsExample03">
@@ -51,7 +58,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="blog.html">Blog</a>
                 </li>
-            </div>
+              </div>
         </div>
         </div>   
         </nav>
@@ -411,6 +418,25 @@ $(function() {
     $backToTop.on('click', function(e) {
       $("html, body").animate({scrollTop: 0}, 500);
     });
+
+    // Works everywhere
+$(document).ready(function () {
+
+// Hide/show animation hamburger function
+$('.navbar-toggler').on('click', function () {
+
+// Take this line to first hamburger animations
+$('.animated-icon1').toggleClass('open');
+
+// Take this line to second hamburger animation
+$('.animated-icon3').toggleClass('open');
+
+// Take this line to third hamburger animation
+$('.animated-icon4').toggleClass('open');
+});
+
+});
+
 </script>
   </body>
 </html>
