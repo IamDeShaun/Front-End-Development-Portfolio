@@ -275,20 +275,39 @@ header .navbar-light .navbar-toggler {
   border: 0px !important;
   font-size: 1.5em !important; }
 
+button.navbar-toggler {
+  padding-top: .75rem !important;
+  padding-bottom: .75rem !important; }
+
 /*--------------------------------------------------------------
 # Site Hero Section
 --------------------------------------------------------------*/
 .site-hero {
-  padding-top: 60px;
+  background-image: url("img/main-hero.jpg");
   padding-bottom: 60px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#292C33), to(#393d47));
-  background: linear-gradient(to bottom right, #292C33, #393d47);
-  text-align: center;
-  align-items: center; }
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 150px;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 500px;
+  position: relative; }
 
 .site-hero a {
   font-weight: 800;
   color: #68c7fd; }
+
+.site-hero .about {
+  text-align: center;
+  font-weight: 600; }
+
+.site-hero .about p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fff !important;
+  margin-top: 40px; }
 
 .site-hero a:hover {
   font-weight: 800;
@@ -304,6 +323,24 @@ span.site-hero h1 {
   font-size: 1.1rem;
   margin: 2.5rem 0;
   color: #bec6d5; }
+
+#idea {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  line-height: .8;
+  cursor: default;
+  text-transform: uppercase;
+  text-align: center !important; }
+
+#idea span {
+  font-size: 3.5rem;
+  font-weight: 600;
+  display: inline-block; }
+
+#idea span.plus {
+  display: inline-block;
+  width: auto; }
 
 /*--------------------------------------------------------------
 # Skills Section Section
@@ -620,6 +657,11 @@ span.site-hero h1 {
     padding-right: 0 !important;
     padding-left: 0 !important; }
 
+  #idea span {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px; }
+
   nav ul {
     margin-top: 10px;
     padding-bottom: 10px; }
@@ -633,6 +675,31 @@ span.site-hero h1 {
   a.nav-link:hover {
     font-size: 1.5rem !important; } }
 @media (max-width: 575px) {
+  .site-hero {
+    background-image: url("img/main-hero.jpg");
+    padding-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px !important;
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 400px !important;
+    position: relative; }
+
+  #idea span {
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 20px; }
+
+  .site-hero .about p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff !important;
+    margin-top: 40px; }
+
   #blog-post header h2 {
     font-size: 1.3rem;
     text-align: left; }
